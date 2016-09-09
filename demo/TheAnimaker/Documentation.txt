@@ -1,0 +1,114 @@
+1. Changes from the original:
+
+	The biggest change from our original design was  the removal of the image pool. 
+	Our first design had an area on the side of the work area that you would drag 
+	images in and it would store them for future use. We decided to scrap that entire
+	feature because it was more efficient to just drag and drop images into the work
+	area. When the user adds an image, whatever was on the previous one is saved onto 
+	the next one which allows for easy work flow when using the same image.
+
+	We also had an instructions/button area to the left of the work area. Instead, we
+	moved all the buttons below the work area and changed the instructions to be a link
+	to a pdf. As we added more to The Animaker, we realized that this small area would 
+	not be enough to fully teach the user how to use it.
+
+2. Meeting the requirements:
+	
+	Media:
+		There is a consistant color scheme throughout The Animaker. All image files
+		used are in the PNG format and all were custom made.
+
+		There are two embedded fonts in The Animaker which add a light hearted aura
+		to the app. Our names are at the bottom of the page.
+
+		The Animaker's sole purpose is to utilize canvas in order to animate separate
+		images. I believe we achieved that well.
+
+	Interaction:
+		All buttons and checkboxes affect the user's experience. The user uses the mouse
+		in order to interact with everything in The Animaker. When buttons are pressed,
+		they change images in order to allow the user to recognize they are pressing a button.
+
+	Usability:
+		There is really only one screen in The Animaker that changes and updates as the user
+		continues to use The Animaker.
+
+		There is an instruction manual that teaches the user step by step on mastering
+		The Animaker. Also, "Drag an image here to start" is displayed on the work  area
+		if there are no images in it, which teaches the user how to start before they even
+		touch the manual.
+
+		Custom button images change when pressed to let the user know when they are pressing
+		them. All changes in the work area are updated instantaneously so the user always
+		knows what they are doing.
+
+		The Animaker is pretty straightforward and easy to use. Any questions the user has
+		should be answered in the instruction manual.
+
+	Experience:
+		We set out to make something that can animate multiple images using canvas and we
+		achieved it.
+
+		If people are interested in making animations, they would definitely check this app
+		out.
+
+	OOP and Coding Standards:
+		No outside libraries are used.
+
+		The code runs with no errors.
+
+		The Module pattern is there. We separated functionly into separate js files.
+		Our code is consistent and we tried to not be redundant.
+		"use strict" is on top of every js file.
+		The code is pretty up to standard.
+		
+	Extras:
+		I'd say the design is pleasing to look at.
+        
+        Keyboad shortcuts for the work area were also an added bonus.
+
+		We started The Animaker from scratch.
+
+3. What went right/What went wrong:
+
+	What went wrong was the image pool. We wanted there to be a spot where the user would
+	drag images to save for later use. Then the user would be able to click on each image
+	and a small box full of the images settings and info would display. And from there the
+	quser would drag that image to the work area and be able to use it then. We had gotten
+	it set up to where we could drag and drop images into it and be able to scroll through 
+	it kind of, but upon further thinking we realized it was a bit redundant to have all of
+	that dragging and dropping just to use an image.
+
+	With that in mind, I believe the work area became a pretty solid piece of our app. It has
+	many keyboard shortcuts and is easy to use. The entire Animaker basically revolves around
+	the work area. It became a central part of the app and works fluidly.
+
+	Design wise, I think the color scheme also went well. The grey tones are easy to look at.
+	Although there are 3 different fonts on the page, they all work together to create a pleasant
+	viewing experience. Two of the fonts are almost the same bubbly fun lettering which makes
+	them seem like the same font.
+
+4. No-course resources:
+
+	None :).
+
+5. Contributions:
+
+	Myself
+		I was incharge of adding pizazz and overall design. I dealt with the html and css. All visual
+        aspects of The Animaker were done by me. I created each button and border for the work area and 
+        timeline. Also, I created the instructions manual for the app. I also did work in the import.js 
+        which was figuring out how the drag and drop api worked with canvas. I also worked on loader.js 
+        which puts everything together all nice and neat. I also did some work in workArea.js. most notable 
+        is making the onion skinning work.
+
+	Nick
+        Nick was a heavy hitter in this project. He figured out how to make a beautiful scrollbar
+        and did some major work in the playback.js and frame.js files. He made sure that everything
+        worked together cohesively and smoothly and held up to the correct Coding Standards. He created
+        the logic that goes behind the work area and timeline working together fluidly.
+
+6. Overall Grade:
+
+	Overall, I'd give myself an A and Nick an A+. He's a pretty solid programmer and I could not have
+	done it without him.

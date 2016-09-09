@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg.jpg");
+    background-attachment: fixed;
+    font-family: 'Artifika', serif;
+    color: white;
+}
+
+body {
+    min-height: 100%;
+}
+
+#container {
+    text-align: center;
+    display: block;
+}
+
+#center {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    /*background: linear-gradient(#272147, #2d3269);*/
+    background-color: #2d3269;
+    box-shadow: 0px 0px 15px black;
+}
+
+#top {
+    height: 90px;
+}
+
+#errors {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #272147;
+}
+
+h1 {
+    margin: auto;
+    padding-top: 10px;
+}
+
+p {
+    margin: auto;
+    font-family: 'Mako';
+}
+
+#map {
+    color: black;
+    text-shadow: none;
+}
+
+#directions {
+    display: none;
+}
+
+#left {
+    left: 1.25%;
+    padding-bottom: 10px;
+}
+
+#right {
+    display: none;
+}
+
+select {
+    width: 50%;
+}

@@ -1,0 +1,29 @@
+.adp, .adp table, .adp-summary, .adp-legal {
+    color: white;
+}
+
+.adp-text {
+    font-family: 'Artifika', serif;
+}
+
+.adp-substep {
+    font-family: 'Mako';
+    border-top: 1px solid black;
+}
+
+.adp-directions {
+    width: 100%;
+}
+
+.adp-placemark {
+    background-color: #272147;
+    border: 1px solid black;
+}
+
+.warnbox-content, .warnbox-c1, .warnbox-c2 {
+    background-color: #2d3269;
+}
+
+.adp-maneuver {
+    display: none;
+}

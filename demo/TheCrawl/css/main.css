@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg.jpg");
+    background-attachment: fixed;
+    font-family: 'Artifika', serif;
+    color: white;
+}
+
+body {
+    min-height: 100%;
+}
+
+#container {
+    text-align: center;
+    display: block;
+}
+
+#center {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    /*background: linear-gradient(#272147, #2d3269);*/
+    background-color: #2d3269;
+    box-shadow: 0px 0px 15px black;
+}
+
+#top {
+    height: 85px;
+}
+
+#errors {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #272147;
+}
+
+h1 {
+    margin: auto;
+    padding-top: 10px;
+}
+
+p {
+    margin: auto;
+    font-family: 'Mako';
+}
+
+#map {
+    color: black;
+    text-shadow: none;
+}
+
+#directions {
+    display: none;
+}
+
+.sidebar {
+    position: absolute;
+    top: 100px;
+    width: 15%;
+    background: #2d3269;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#left {
+    left: 1.25%;
+    padding-bottom: 10px;
+}
+
+#right {
+    left: 83.75%;
+}
+
+select {
+    width: 50%;
+}
+
+#waypoint {
+    padding: 10px 0 10px 0;
+    border-top: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+#waypoint:nth-child(odd) {
+    background-color: #272147;
+}
+
+#waypoint:nth-child(even) {
+    background-color: #2d3269;
+}
