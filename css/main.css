@@ -380,6 +380,9 @@ button:active {
   h1 {
     font-size: 40pt;
   }
+  h2 {
+    font-size: 20pt;
+  }
   .sect-projects h1 {
     font-size: 30pt;
   }
