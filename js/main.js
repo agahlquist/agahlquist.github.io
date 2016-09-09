@@ -19,7 +19,7 @@ $(document).ready(function() {
     },
 //    {
 //      title: 'DIE BUDDY',
-//      desc: "<p>Die Buddy is a <em class='em-projects'>multi-user web app</em> that allows users to either host a room or connect to an existing room. There, they can create simple DnD character sheets with basic attributes and roll different amounts of numbered die that are broadcasted to each user in the room.</p><p>This project was made for my Rich Media II class and utilized <em class='em-projects'>node.js</em>, <em class='em-projects'>MongoDB</em>, <em class='em-projects'>Redis</em>, and <em class='em-projects'>Jade</em> in order to create it.</p>",
+//      desc: "<p>Die Buddy is a <em class='em-projects'>multi-user web app</em> that allows users to either host a room or connect to an existing room. There, they can create simple DnD character sheets with basic attributes and roll different amounts of numbered die that are broadcasted to each user in the room.</p><p>This project was made for my Rich Media II class and utilized an <em class='em-projects'>MVC structure</em> along with <em class='em-projects'>node.js</em>, <em class='em-projects'>MongoDB</em>, <em class='em-projects'>Redis</em>, and <em class='em-projects'>Jade</em> in order to create it.</p>",
 //      img: '',
 //      alt: '',
 //      link: 'https://diebuddy.herokuapp.com/'
