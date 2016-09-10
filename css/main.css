@@ -316,6 +316,7 @@ button:active {
   height: 150px;
   border-radius: 10px;
   max-width: 1000px;
+  margin: 0 auto;
 }
 .project-img {
   position: absolute;
