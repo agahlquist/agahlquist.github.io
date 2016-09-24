@@ -5,9 +5,9 @@ $(document).ready(function() {
 
   var hovered;
   var active = $('#nav-about');
+  var activeProject = $('#webButton');
   var currentContent = $('.about');
   var movingContent;
-  var activeProject;
   
   var projects = [
     {
@@ -202,52 +202,41 @@ $(document).ready(function() {
   });
 
   //handle project button click
-  $('.catButton').click(function() {
-    if(this == activeProject) {
+  $('.project-nav').click(function() {
+    if($(this).hasClass('project-nav-active')) {
       return;
     } else {
-      activeProject = this;
-      switch($(activeProject).attr('id')) {
-        case 'webButton':
-          loadProjectContent(projects);
-          break;
-        case 'actButton':
-          loadProjectContent(acting);
-          break;
-      }
+      var that = this;
       
-      if(!$("button[class='catButton']").hasClass('disabled')) {
-        $("button[class='catButton']").addClass('disabled');
+      if(!$("h2[class='project-nav']").hasClass('disabled')) {
+        $("h2[class='project-nav']").addClass('disabled');
         
-        if($('#projectContent').css('display') == 'none') {      
-          $('#projectContent').css('display', 'block');
-          $('#projectContent').stop().animate({
-            top: 0
-          }, 900, 'easeOutBounce', function() {
-            $("button[class='catButton disabled']").removeClass('disabled');
+        $(activeProject).removeClass('project-nav-active');
+        activeProject = this;
+        $(activeProject).addClass('project-nav-active');
+        
+        $('#activeProjectsWrapper').stop().animate({
+          height: 0,
+        }, 600, 'easeOutExpo', function() {
+          switch($(that).attr('id')) {
+            case 'webButton':
+              loadProjectContent(projects);
+              break;
+            case 'actButton':
+              loadProjectContent(acting);
+              break;
+          }
+          $('#activeProjectsWrapper').stop().animate({
+            height: $('#activeProjects').height()
+          }, 1000, 'easeInOutExpo', function() {
+            $("h2[class='project-nav']").removeClass('disabled');
           });
-        } else {
-          $('#projectContent').stop().animate({
-            opacity: 0
-          }, 0, 'linear', function() {
-            $('#projectContent').css({
-              display: 'none',
-              top: 500
-            });
-            $('#projectContent').css('opacity', 1);
-
-            $('#projectContent').css('display', 'block');
-            $('#projectContent').stop().animate({
-              top: 0
-            }, 900, 'easeOutBounce', function() {
-              $("button[class='catButton disabled']").removeClass('disabled');
-            });
-          });
-        }
+        });
       }
     }
   });
 
+  loadProjectContent(projects);
   $(window).resize(checkSize);
 });
 
@@ -262,7 +251,6 @@ function loadProjectContent(data) {
   $('#activeProjects').empty();
   
   $.each(data, function(i, project) {
-    //for now
     if(project.link != '') {
       $('#activeProjects').append("<div class='project'>" +
                                     "<div class='project-top'>" +
